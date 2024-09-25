@@ -1,0 +1,25 @@
+.header-nav{
+    background-color: #333;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    color:#fff;
+    font-weight: 500;
+    padding:15px;
+}
+
+.nav-bar ul{
+    display:flex;
+    gap:10px;
+    list-style-type: none;
+    
+
+}
+
+.nav-bar ul li a {
+    color:#fff;
+    text-decoration: none;
+}
