@@ -10,7 +10,7 @@ export const Product = ({data}) =>{
                 </div>
 
                 <div className="home-product-detail">
-                <h2>{item.name}</h2>
+                <h4>{item.name}</h4>
                 <p>Price: Rs.{item.price}</p>
                 <button>Add to cart</button>
                 </div>
