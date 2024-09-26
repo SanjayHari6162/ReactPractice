@@ -1,9 +1,9 @@
-
+import './Product.css'
 
 export const Product = ({data}) =>{
     
     return(
-        <div className="container">
+        <div className="product-container">
             {data.map((item)=>(<div className='home-product' key={item.id}>
                 <div className="home-product-img">
                     <img src={item.pic}></img>
