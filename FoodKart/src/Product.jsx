@@ -1,6 +1,14 @@
 import './Product.css'
 
-export const Product = ({data}) =>{
+export const Product = ({data, cart, setCart}) =>{
+
+    const handleAddCart = (item) =>{
+        setCart([...cart,item])
+    }
+    
+    const handleRemoveCart = (item) =>{
+        setCart(cart.filter((product)=>(product.id!==item.id)))
+    }
     
     return(
         <div className="product-container">
@@ -12,7 +20,8 @@ export const Product = ({data}) =>{
                 <div className="home-product-detail">
                 <h4>{item.name}</h4>
                 <p>Price: Rs.{item.price}</p>
-                <button>Add to cart</button>
+
+                {cart.includes(item) ? (<button className="btn-remove" onClick={()=>handleRemoveCart(item)}>Remove from Cart</button>):(<button onClick={()=>handleAddCart(item)}>Add to Cart</button>)}
                 </div>
             </div>))}
         </div>
