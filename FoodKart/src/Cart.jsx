@@ -5,12 +5,7 @@ export const Cart = ({cart, setCart}) =>{
     
     const [total,setTotal] = useState(0)
     
-    // useEffect(()=>{
-    //     for(let i=0;i<=cart.length;i++){
-    //         console.log(cart[].price)
-    //     }
-        
-    // },[cart])
+    
     return(
         <div className="cart-container">
             <h2>Cart Product</h2>
