@@ -33,3 +33,11 @@ body{
     padding-right:10px;
     margin-right:10px;
 }
+
+.cart-length{
+    color:#888;
+    padding: 0px 2px;
+    background-color: #fff;
+    border-radius: 2px;
+    margin: 0px 4px;
+}

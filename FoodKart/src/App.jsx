@@ -14,7 +14,7 @@ function App() {
   return (
     <BrowserRouter>
     
-     < Header />
+     < Header cart={cart} />
      <div className="container">
       <Routes>
         <Route path={"/"} element={< Home cart={cart} setCart={setCart}/>} />

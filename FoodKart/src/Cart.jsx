@@ -4,15 +4,24 @@ import './Cart.css'
 export const Cart = ({cart, setCart}) =>{
     
     const [total,setTotal] = useState(0)
-    const amount=[]
+   
+    
     useEffect(()=>{
-        
-    setTotal(amount.push(cart.price))
-    console.log(amount)     
-            
-        
+        setTotal(cart.reduce((acc,cur)=> acc + parseInt(cur.price),0))
     },[cart])
-    console.log(cart)
+    
+           
+
+        
+        
+         
+    
+   
+    
+    
+    
+
+
     
     return(
         <div className="cart-container">
@@ -38,6 +47,7 @@ export const Cart = ({cart, setCart}) =>{
 
             <div className="product-total-cost">
                 <h2>Total : Rs.{total}</h2>
+                
             </div>
         
             
